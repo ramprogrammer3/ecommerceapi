@@ -4,8 +4,16 @@ const express = require("express");
 require("dotenv").config();
 const port = process.env.port || 8080;
 
+// importing connect function to connect mongodb compass
+const connect = require("./config/db");
+
 // creating server
 const app = express();
+
+// connecting mongodb compass
+connect();
+
+
 
 
 
