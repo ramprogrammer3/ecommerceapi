@@ -15,7 +15,7 @@ const connect = require("./config/db");
 
 // importing  router file
 const productRouter = require("./router/productRouter");
-app.use("/product",productRouter);
+app.use("/products",productRouter);
 
 // connecting mongodb compass
 connect();
